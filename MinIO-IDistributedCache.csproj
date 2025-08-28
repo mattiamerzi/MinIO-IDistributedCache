@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>Minio.Extensions.Caching.Distributed</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <Title>MinIO IDistributedCache implementation</Title>
+    <Authors>mattia.merzi</Authors>
+    <Description>An implementation of IDistributedCache backed by MinIO with optional fallback to in-memory cache</Description>
+    <PackageProjectUrl>https://github.com/mattiamerzi/MinIO-IDistributedCache</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/mattiamerzi/MinIO-IDistributedCache</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageOutputPath>bin\nuget</PackageOutputPath>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>© 2025 Mattia Merzi</Copyright>
+    <Version>0.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.1" />
+    <PackageReference Include="Minio" Version="6.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
