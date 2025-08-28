@@ -1,3 +1,5 @@
+[![.NET](https://github.com/mattiamerzi/MinIO-IDistributedCache/actions/workflows/dotnet.yml/badge.svg)](https://github.com/mattiamerzi/MinIO-IDistributedCache/actions/workflows/dotnet.yml)
+
 # MinIO Distributed Cache for ASP.NET Core
 
 A high-performance distributed cache implementation for ASP.NET Core using MinIO object storage.
